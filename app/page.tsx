@@ -1,65 +1,79 @@
-import Image from "next/image";
+import { Section } from "@/components/Section";
+import { profile } from "@/data/profile";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* Hero Section */}
+      <Section className="flex flex-col justify-center min-h-[80vh] pt-20">
+        <div className="space-y-6 max-w-4xl animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <span className="text-primary font-mono text-sm md:text-base tracking-wider uppercase">
+            Senior React Native Engineer
+          </span>
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-foreground leading-[1.1]">
+            Building secure, <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+              production-grade
+            </span>{" "}
+            mobile apps.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-lg md:text-xl text-secondary max-w-2xl leading-relaxed">
+            I specialize in React Native & Expo, focusing on performance, security, and seamless user experiences.
+            5+ years of shipping apps to millions of users.
           </p>
+
+          <div className="flex flex-wrap gap-4 pt-4">
+            <Link
+              href="/projects"
+              className="px-8 py-4 rounded-full bg-primary text-white font-semibold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25"
+            >
+              View Projects
+            </Link>
+            <a
+              href={profile.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 rounded-full bg-secondary/10 text-foreground font-semibold hover:bg-secondary/20 transition-all border border-white/5"
+            >
+              GitHub Profile
+            </a>
+            <a
+              href={profile.resume}
+              className="px-8 py-4 rounded-full bg-transparent text-secondary font-semibold hover:text-foreground transition-all flex items-center gap-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download Resume
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </Section>
+
+      {/* Highlights Section */}
+      <Section className="bg-card-bg/30">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="p-6 rounded-2xl bg-card-bg border border-border">
+            <h3 className="text-xl font-bold mb-3 text-primary">React Native & Expo</h3>
+            <p className="text-secondary text-sm leading-relaxed">
+              Expertise in bare workflow and managed projects, custom native modules, and high-performance list rendering.
+            </p>
+          </div>
+          <div className="p-6 rounded-2xl bg-card-bg border border-border">
+            <h3 className="text-xl font-bold mb-3 text-primary">Mobile Security</h3>
+            <p className="text-secondary text-sm leading-relaxed">
+              Implementation of SSL pinning, Jailbreak/Root detection, secure storage using Keychain/Keystore, and biometric auth.
+            </p>
+          </div>
+          <div className="p-6 rounded-2xl bg-card-bg border border-border">
+            <h3 className="text-xl font-bold mb-3 text-primary">Production & OTA</h3>
+            <p className="text-secondary text-sm leading-relaxed">
+              Seamless updates via CodePush/EAS Update, CI/CD pipelines, and rigorous analytics with Mixpanel/Firebase.
+            </p>
+          </div>
         </div>
-      </main>
-    </div>
+      </Section>
+    </>
   );
 }
