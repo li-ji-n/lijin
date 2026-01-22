@@ -3,8 +3,10 @@
 :root {
   --background: #0a0a0a;
   --foreground: #ededed;
-  --primary: #3b82f6; /* Premium Blue */
-  --secondary: #64748b; /* Slate */
+  --primary: #3b82f6;
+  /* Premium Blue */
+  --secondary: #64748b;
+  /* Slate */
   --card-bg: #171717;
   --border: #262626;
 }
@@ -20,4 +22,62 @@ body {
 ::selection {
   background-color: var(--primary);
   color: white;
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+
+  .glass-card {
+    background: rgba(23, 23, 23, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
 }

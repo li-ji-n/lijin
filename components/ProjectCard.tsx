@@ -9,7 +9,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     return (
         <Link
             href={`/projects/${project.slug}`}
-            className="group block p-6 rounded-2xl bg-card-bg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1"
+            className="group block p-6 rounded-2xl bg-card-bg/50 backdrop-blur-sm border border-border transition-all duration-500 hover:border-primary/50 hover:shadow-[0_0_30px_-5px_rgba(59,130,246,0.15)] hover:-translate-y-2"
         >
             <div className="flex flex-col h-full">
                 <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors mb-2">
