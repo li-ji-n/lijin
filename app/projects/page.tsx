@@ -11,9 +11,14 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
     return (
         <Section className="py-20">
-            <div className="space-y-4 mb-12">
-                <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Selected Work</h1>
-                <p className="text-secondary text-lg max-w-2xl">
+            <div className="space-y-6 mb-16 animate-fade-in">
+                <p className="text-sm uppercase tracking-wider text-gray-500 font-semibold">
+                    — PORTFOLIO
+                </p>
+                <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
+                    Selected <span className="text-gradient">Work</span>
+                </h1>
+                <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
                     A collection of production mobile applications focusing on performance, security, and scalability.
                 </p>
             </div>

@@ -4,7 +4,7 @@ export const experience: Experience[] = [
     {
         company: "AirlinePros International",
         role: "Senior React Native Developer",
-        duration: "2023 - Present",
+        duration: "Aug 2025 - Present",
         impact: [
             "Led the migration of the flagship booking app to React Native, improving cross-platform feature parity.",
             "Implemented comprehensive security measures including SSL pinning and root detection, securing 100k+ monthly active users.",
@@ -14,7 +14,7 @@ export const experience: Experience[] = [
     {
         company: "Hubspire",
         role: "Senior Software Engineer L1",
-        duration: "2021 - 2023",
+        duration: " Jul 2021 - Jul 2025",
         impact: [
             "Architected multiple greenfield mobile applications using Expo and Firebase backend services.",
             "Mentored junior developers and established code quality standards across the mobile team.",
@@ -24,7 +24,7 @@ export const experience: Experience[] = [
     {
         company: "Softfruit Solutions",
         role: "React Native Developer",
-        duration: "2019 - 2021",
+        duration: "Sep 2020 - Jul 2021",
         impact: [
             "Developed and maintained 5+ client mobile applications using React Native and Redux.",
             "Reduced build times by 50% by implementing efficient CI/CD pipelines.",
