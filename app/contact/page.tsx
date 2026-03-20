@@ -16,6 +16,19 @@ export default function ContactPage() {
                     I&apos;m currently interested in senior mobile engineering roles where I can help build secure, high-scale applications.
                 </p>
 
+                <div className="flex flex-col items-center gap-2 pt-4">
+                    {profile.phone && (
+                        <p className="text-secondary">
+                            <span className="font-semibold text-foreground">Phone:</span> {profile.phone}
+                        </p>
+                    )}
+                    {profile.location && (
+                        <p className="text-secondary">
+                            <span className="font-semibold text-foreground">Location:</span> {profile.location}
+                        </p>
+                    )}
+                </div>
+
                 <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-8">
                     <a
                         href={`mailto:${profile.email}`}

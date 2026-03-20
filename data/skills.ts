@@ -3,18 +3,22 @@ import { SkillGroup } from "./types";
 export const skills: SkillGroup[] = [
     {
         category: "Mobile Core",
-        items: ["React Native", "Expo", "TypeScript", "JavaScript (ES6+)", "React Hooks", "Navigation"]
+        items: ["React Native (CLI & Expo)", "Expo EAS", "Expo Router", "OTA Updates", "NativeWind", "JavaScript", "TypeScript"]
     },
     {
-        category: "Backend & Data",
-        items: ["Firebase (Auth, Firestore, Functions)", "GraphQL", "Apollo Client", "REST APIs", "Node.js"]
-    },
-    {
-        category: "Production & Tooling",
-        items: ["EAS (Expo Application Services)", "CodePush (OTA)", "App Center", "Mixpanel", "Git/GitHub", "CI/CD"]
+        category: "State & Data Management",
+        items: ["Redux Toolkit", "MMKV Storage", "GraphQL / REST APIs", "Firebase"]
     },
     {
         category: "Security",
-        items: ["SSL Pinning", "Secure Storage (Keychain/Keystore)", "Root/Jailbreak Detection", "OAuth 2.0", "Biometric Auth"]
+        items: ["SSL Public Key Pinning", "Root & Jailbreak Detection", "Secure Storage & Token Encryption"]
+    },
+    {
+        category: "Production & Tooling",
+        items: ["Microsoft App Center", "CodePush", "Sentry", "Mixpanel", "CI/CD Pipelines", "Scalable Folder Architecture"]
+    },
+    {
+        category: "UI & Design",
+        items: ["Figma", "Animations and transitions"]
     }
 ];

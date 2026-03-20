@@ -2,33 +2,34 @@ import { Experience } from "./types";
 
 export const experience: Experience[] = [
     {
-        company: "AirlinePros International",
+        company: "AIRLINEPROS INTERNATIONAL | Kochi, India",
         role: "Senior React Native Developer",
         duration: "Aug 2025 - Present",
         impact: [
-            "Led the migration of the flagship booking app to React Native, improving cross-platform feature parity.",
-            "Implemented comprehensive security measures including SSL pinning and root detection, securing 100k+ monthly active users.",
-            "Optimized app performance, achieving a 99.9% crash-free rate via rigorous testing and error monitoring."
+            "Architected and maintained a secure ticket booking mobile application using Expo & EAS.",
+            "Implemented SSL Public Key Pinning and Root & Jailbreak Detection to prevent vulnerabilities and compromised access.",
+            "Designed Deferred Deep Linking strategy using Singular and integrated Sentry for production error monitoring.",
+            "Managed EAS build pipelines and deployment lifecycle for iOS and Android."
         ]
     },
     {
-        company: "Hubspire",
-        role: "Senior Software Engineer L1",
-        duration: " Jul 2021 - Jul 2025",
+        company: "Hubspire | Kochi, India",
+        role: "Senior Software Engineer - L1",
+        duration: "July 2021 - July 2025",
         impact: [
-            "Architected multiple greenfield mobile applications using Expo and Firebase backend services.",
-            "Mentored junior developers and established code quality standards across the mobile team.",
-            "Integrated complex third-party APIs and payment gateways, processing over $1M in transactions annually."
+            "Led React Native application development using TypeScript-based scalable architecture.",
+            "Designed optimized state management strategy using Redux Toolkit and MMKV storage.",
+            "Integrated GraphQL APIs with subscriptions, in-app purchases, and secured sensitive user data using encrypted token management."
         ]
     },
     {
-        company: "Softfruit Solutions",
+        company: "Softfruit Solutions | Calicut, India",
         role: "React Native Developer",
-        duration: "Sep 2020 - Jul 2021",
+        duration: "Sep 2020 - July 2021",
         impact: [
-            "Developed and maintained 5+ client mobile applications using React Native and Redux.",
-            "Reduced build times by 50% by implementing efficient CI/CD pipelines.",
-            "Collaborated with UI/UX designers to implement pixel-perfect, responsive mobile interfaces."
+            "Developed and deployed eCommerce mobile applications using React Native.",
+            "Integrated Firebase (Authentication, Analytics, Remote Config) and Map APIs.",
+            "Implemented OTA updates using CodePush and integrated QR-based ticket scanning modules."
         ]
     }
 ];

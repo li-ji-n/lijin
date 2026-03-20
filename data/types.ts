@@ -3,6 +3,8 @@ export interface Profile {
     role: string;
     summary: string;
     email: string;
+    phone?: string;
+    location?: string;
     github: string;
     linkedin: string;
     resume: string; // Path to PDF
